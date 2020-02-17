@@ -7,6 +7,4 @@ switch ($modx->event->name) {
         $modx->lexicon->load('tvace:tv');
         $modx->event->output($corePath.'elements/tv/input/');
         break;
-    case 'OnManagerPageBeforeRender':
-        break;
 }
