@@ -7,6 +7,7 @@ setTimeout(function() {
 	var TextEditor = MODx.load({
 		xtype: 'modx-texteditor'
 		{/literal}
+		,anchor: '100%'
 		,name: 'tv{$tv->id}'
 		,renderTo: 'tv{$tv->id}'
 		,value: '{$tv->get('value')|escape:'javascript'}'
@@ -20,6 +21,7 @@ setTimeout(function() {
     ,modxTags: true
 		{literal}
 	});
+
     MODx.load({
     	xtype: 'modx-treedrop',
     	target: TextEditor,
